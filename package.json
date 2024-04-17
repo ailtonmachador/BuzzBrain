@@ -1,0 +1,15 @@
+{
+  "name": "assigment3",
+  "version": "1.0.0",
+  "description": "blog using node/express",
+  "main": "mongoDatabase.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/ailtonmachador/BuzzBrain"
+  },
+  "author": "ailton machado",
+  "license": "ISC"
+}
