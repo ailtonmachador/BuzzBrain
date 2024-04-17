@@ -1,0 +1,20 @@
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to BuzzBrain</h1>
+    <p class="lead"> For busy brains </p>
+    <hr class="my-4">    
+</div>
+<div class="posts_grid">
+  <h2>RECENTS POSTS</h2>
+  {{#each post}}  
+  <div class="card my-5">
+    <div class="card-body">
+        <h3 class="card-title">{{title}}</h3>
+      <p class="card-text">{{post_text}}</p>
+       <small class="d-block">Published date: {{publised_date}}</small>
+      <a href="/home/editPost/{{_id}}"><button class="btn btn-success mt-4">Edit post</button> </a>
+      <a href="/posts/index/{{_id}}"><button class="btn btn-success mt-4">read more</button> </a>
+      <a href="/posts/delete-post/{{_id}}"><button class="btn btn-danger mt-4">delete</button> </a>
+    </div>
+  </div>  
+  {{/each}}
+  </div>

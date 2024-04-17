@@ -1,0 +1,13 @@
+      <h2>Posts:</h2>
+<hr>
+<a href="/add-post" class="btn btn-success">New Post</a>
+{{#each post}}
+<div class="card my-3">
+    <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <p class="card-text">about: {{post_text}}</p>
+        <small class="d-block">published date: {{publised_date}}</small>        
+        <a href="/posts/index/{{_id}}"><button class="btn btn-success mt-4">read more</button> </a>             
+    </div>
+</div>
+{{/each}}

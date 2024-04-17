@@ -1,0 +1,23 @@
+{{#each errors}}
+<div class="alert alert-danger">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Error!</strong> {{text}}
+</div>
+{{/each}}
+
+<h3>register:</h3>
+<div class="card">
+    <div class="card-body">
+        <form action="/register-validation" method="post">
+            <label for="name">Name: </label>
+            <input type="text" name="name" class="form-control" required>
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" class="form-control" required>
+            <label for="password">Password: </label>
+            <input type="password" name="password" class="form-control" required>
+            <label for="password_confirmation">repeat password: </label>
+            <input type="password" name="password_confirmation" class="form-control" required>
+            <button type="submit" class="btn btn-primary mt-4">register</button>
+        </form>
+    </div>
+</div>

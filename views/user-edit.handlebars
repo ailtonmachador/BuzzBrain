@@ -1,0 +1,30 @@
+
+    <div class="register-validation-admin-form">
+          <form action="/updateUser" method="POST" class="row row-cols-lg-auto g-3 align-items-center">
+          <input type="hidden" name="id" value="{{User._id}}">
+            <div class="col-12">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" name="email"  value="{{User.email}}" id="email" placeholder="name@example.com">
+              </div>
+              <div class="col-12">
+                Name
+                <input class="form-control" name="name" id="email" value="{{User.name}}" type="text" placeholder="name" aria-label=".form-control-lg example">  
+                </div>
+           
+          
+            <div class="col-12">
+              <label for="inlineFormSelectPref">admin</label>
+              <select id="opcoes" name="opcao">
+                    <option value="1" aria-placeholder="{{User.isAdmin}}">True</option>
+                    <option value="2">False </option>
+                </select>
+            </div>    
+          
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+            <div class="col-12">
+                <a href="/admin-features/search-user"><button type="button" class="btn btn-primary">Cancel</button></a>
+              </div>         
+          </form>
+    </div>

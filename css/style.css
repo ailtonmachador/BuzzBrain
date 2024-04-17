@@ -1,0 +1,144 @@
+
+   /* changing menu nav bar */
+
+   .menuNav nav {
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Center elements vertically (optional) */
+}
+
+   /*adjust nav menu*/
+    .menuNav {
+        padding-left: 40px;
+        padding-right: 40px;        
+    }
+
+    /* hover nav menu*/
+    .menuNav a:hover {
+        background-color: #aab7ff;  /* Change background to light gray on hover */
+      }
+    /* end changing menu nav bar */
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 80% 1fr;  /* Adjust these values for different ratios */
+      grid-gap: 10px;
+      padding: 20px;
+    }
+    
+    .posts_grid{
+      background-color: #ddd;
+      padding: 20px;
+      padding-left: 10px;
+
+    }
+    
+   /* cards recent posts*/
+   .container-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+    
+    .menu-side-grid {      
+      background-color: #ccc;
+      padding: 20px;      
+    }
+    .side{
+      padding-top: 20px;
+      display: grid;
+      grid-gap: 70px;
+    }
+
+    .recent-posts-blog{
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);      
+      grid-gap: 20px;
+      background-color: rgb(206, 206, 206);     
+      margin-top: 20px; 
+    }
+    
+    .cards{
+      background-color: #ffffff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      text-align: center;    
+    }
+
+
+    /* details post (readmore.html)  */
+
+    .details-content{      
+   
+      text-align: center;
+    }
+    
+    .box-style{
+      border: 1px solid #000000;
+      background-color: aqua;
+      width: fit-content;
+      margin-left: 30%;
+      margin-right: 30%;
+      word-break: break-all;
+      margin-top: 50px;
+      
+    }
+
+    .title{
+      align-content: center;
+      background-color:#ffffff;
+      border: none;
+    }
+    
+    .post-content{
+      border: 1px solid black;
+      background-color: #aab7ff;  
+    }    
+
+    .box-style2{
+      display: grid;      
+      grid-column: 2fr 1fr 1fr 1fr 1fr 1fr;
+      grid-row: 1fr 1 fr 1fr;
+    }
+
+    .published-date{
+      grid-row: 2;
+    }
+
+    .btn-group{
+      grid-row: 2;      
+    }
+
+    /* panel (admin_painel.html) */
+    .col-6{
+      border: 1px solid #000000;
+      padding-left: 20px;      
+    }
+
+    .panel{
+      margin-top: 20px;
+    }
+
+    /* form (add_user.html) */
+    .form_add_user{
+      margin: 90px;
+    }
+
+
+
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+

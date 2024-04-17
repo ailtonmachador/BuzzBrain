@@ -1,0 +1,36 @@
+{{#each user}} 
+<h4>Login:</h4>
+<div class="card">
+    <div class="card-body">
+        <form>
+            <div class="row">
+                <div class="col">
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" value="{{email}}" class="form-control" disabled>
+                </div>
+                <div class="col">
+                    <label for="name">Name: </label>
+                    <input name="name" value="{{name}}" id="name" class="form-control" disabled>
+                </div>
+                <div class="col">
+                    <label for="inlineFormSelectPref">Admin</label>
+                    <select class="form-select" id="isAdmin" value="{{isAdmin}}" disabled>                      
+                        <option value="{{isAdmin}}">{{isAdmin}}</option>                              
+                    </select>
+                </div>
+            
+            
+                <div class="col">
+                  <label for="edit">Edit</label>
+                    <a href="/admin-features/search-user/user-edit/{{_id}}" class="btn btn-success edit-user-btn" id="edit">edit</a>
+                </div>
+                <div class="col">
+                <label for="delete">Delete</label>
+                    <a href="/admin-features/search-user/user-delete/{{_id}}" class="btn btn-danger delete-user-btn"  id="delete">delete</a>
+                </div>
+            
+            </div>
+        </form>
+    </div>
+</div>
+{{/each}}
