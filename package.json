@@ -11,6 +11,9 @@
     "type": "git",
     "url": "github.com/ailtonmachador/BuzzBrain"
   },
+  "engines": {
+    "node": ">=20.11.1 <20.12.1"
+  },
   "author": "ailton machado",
   "license": "ISC"
 }
