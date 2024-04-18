@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-const port = 3000; 
+const port = process.env.port || 3000; 
 //import mongoose
 const mongoose = require("mongoose");
 require("/Users/ailto/Documents/computing science/3 YEAR/WEB TECHNOLOGIES/assigment3/models/posts-db")
@@ -12,6 +12,7 @@ const session = require("express-session");
 const flash = require("connect-flash");
 const passport = require("passport");
 require("./config/auth")(passport);
+const db = require("./config/db");
 const {isAdmin} = require("./helper/isAdmin"); //use function is admin
 //const {isAdminCanSee} =  require("./helper/isAdmin"); //use function is admin
 
@@ -40,7 +41,7 @@ app.use((req, res, next) => {
 });
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/blogDB')
+mongoose.connect(db.mongoURI)
 .then(() => console.log('Connected!'));
 
 
