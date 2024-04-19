@@ -4,8 +4,8 @@ const app = express();
 const port = process.env.port || 3000; 
 //import mongoose
 const mongoose = require("mongoose");
-require("/Users/ailto/Documents/computing science/3 YEAR/WEB TECHNOLOGIES/assigment3/models/posts-db")
-require("/Users/ailto/Documents/computing science/3 YEAR/WEB TECHNOLOGIES/assigment3/models/users")
+require("./models/posts-db")
+require("./models/users")
 const User = mongoose.model("User");
 const posts = mongoose.model("post");
 const session = require("express-session");
