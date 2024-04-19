@@ -58,6 +58,10 @@ app.set('view engine', 'handlebars')
 
 
 //rotes
+app.get('/', (req, res) => {
+  res.redirect("/home")
+});
+
 app.get('/home', (req, res) => {
   posts.find().sort({ publised_date: -1 }).limit(10).lean().then((post)=>{
     res.render('home', {post: post})
